@@ -5,6 +5,8 @@ on:
     - cron: '*/30 * * * *'   # Chạy mỗi 30 phút
   workflow_dispatch:           # Cho phép trigger thủ công từ GitHub UI
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -15,7 +17,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - run: npm ci || npm install
 
