@@ -1,0 +1,11 @@
+{
+  "name": "seba-sheet-sync",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "sync": "node scripts/sync.js"
+  }
+}
