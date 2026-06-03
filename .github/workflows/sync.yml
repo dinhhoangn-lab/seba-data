@@ -18,7 +18,6 @@ jobs:
       - name: Sync sheets to JSON
         env:
           APPSCRIPT_URL: ${{ secrets.APPSCRIPT_URL }}
-          SHEET_NAMES: ${{ vars.SHEET_NAMES }}
         run: node scripts/sync.js
 
       - name: Commit if changed
