@@ -25,6 +25,18 @@ https://cdn.jsdelivr.net/gh/<user>/<repo>@main/data/<sheet_name>.json
 
 Ví dụ: `https://cdn.jsdelivr.net/gh/your-user/seba-data@main/data/event1.json`
 
+## Nhúng vào trang HTML
+
+Thêm đoạn sau vào file HTML, trước thẻ đóng `</body>`:
+
+```html
+<div id="seba" data-name="プリンス_新富良野" data-color="#00ff00"></div>
+<script src="seba.js"></script>
+```
+
+- `data-name` — tên sheet cần hiển thị (đúng tên file trong Google Drive)
+- `data-color` — màu hiển thị (hex color)
+
 ## Cập nhật data
 
 - Edit Google Sheet như bình thường.
