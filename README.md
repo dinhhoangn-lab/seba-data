@@ -30,7 +30,7 @@ Ví dụ: `https://cdn.jsdelivr.net/gh/your-user/seba-data@main/data/event1.json
 Thêm đoạn sau vào file HTML, trước thẻ đóng `</body>`:
 
 ```html
-<div id="seba" data-name="プリンス_新富良野" data-color="#00ff00"></div>
+<div id="seba" data-name="シート名" data-color="#00ff00"></div>
 <script src="seba.js"></script>
 ```
 
